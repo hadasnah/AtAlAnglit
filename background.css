@@ -1,0 +1,29 @@
+body {
+	background-color: lightblue;
+}
+
+#warning{
+	text-align: center;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+#result{
+	text-align: right;
+}
+
+button{
+	display: block;
+    margin: 0 auto;
+	
+}
+
+h1{
+	font-size: 1.5em;
+	text-align:center;
+}
+
+input{
+	margin: 8px 0;
+}
+
