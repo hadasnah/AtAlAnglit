@@ -1,9 +1,10 @@
-document.getElementById("myButton").addEventListener("click", switchH2E);
+document.getElementById("button").addEventListener("click", switchE2H);
 
 String.prototype.replaceAt = function(index, replacement) {
     return this.substr(0, index) + replacement + this.substr(index + replacement.length);
 };
-function switchH2E() {
+
+function switchE2H() {
 	var inputText = document.getElementById("inputText").value;
 	var test = {
 		"q": "/",
@@ -33,6 +34,7 @@ function switchH2E() {
 		"n": "מ",
 		"m": "צ",
 		",": "ת",
+		"/": "."
 	};
 	var outputWord="";
 	for (var i = 0; i < inputText.length; i++){
@@ -46,7 +48,7 @@ function switchH2E() {
 		
 	}
 	
-	document.getElementById("demo").innerHTML = outputWord;
+	document.getElementById("result").innerHTML = outputWord;
 	
 	document.addEventListener('copy', function(e) {
 	  e.clipboardData.setData('text/plain', outputWord);
@@ -54,5 +56,4 @@ function switchH2E() {
 	});
 	
 	document.execCommand('copy');
-	
 }
