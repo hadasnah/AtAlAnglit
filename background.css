@@ -10,11 +10,12 @@ body {
 
 #result{
 	text-align: right;
+	direction: rtl;
 }
 
 button{
 	display: block;
-    margin: 0 auto;
+    	margin: 0 auto;
 	
 }
 
