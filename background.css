@@ -1,5 +1,5 @@
 body {
-	background-color: lightblue;
+	background-color: #ffcccc;
 }
 
 #warning{
@@ -13,9 +13,9 @@ body {
 	direction: rtl;
 }
 
-button{
+#translateButton{
 	display: block;
-    	margin: 0 auto;
+    margin: 0 auto;
 	
 }
 
